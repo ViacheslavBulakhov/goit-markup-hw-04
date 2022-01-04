@@ -149,9 +149,7 @@ img {
 .main-first-section {
   background-color: var(--black-box-color);
 
-  background-image: linear-gradient(
-    0deg, 
-    rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url(../images/hero.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -361,6 +359,36 @@ img {
 .card-content {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+.card-social-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.card-social-item + .card-social-item {
+  margin-left: 10px;
+}
+
+.card-social-link {
+  width: 44px;
+  height: 44px;
+  background-color: var(--white-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  color: #afb1b8;
+}
+
+.card-social-icon {
+  fill: currentColor;
+}
+.card-social-link:hover,
+.card-social-link:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
 }
 
 /* Футер основная страница */
