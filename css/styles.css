@@ -56,7 +56,7 @@ img {
   padding-bottom: 94px;
 }
 
-/* ---------------------Шапка страницы----------- */
+/* ----------------------------------------------------------Шапка страницы----------- */
 .header {
   border-bottom-color: var(--background-for-header);
   border-bottom-width: 1px;
@@ -81,7 +81,7 @@ img {
   display: flex;
   align-items: center;
 }
-/* ------------------------Логотип---------- */
+/* ------------------------Логотип header----------  */
 .logoweb {
   color: var(--accent-color);
   font-family: Raleway;
@@ -145,7 +145,7 @@ img {
 .header-contact:focus {
   color: var(--accent-color);
 }
-/* --------------------------Основной контент------------- */
+/* ---------------------------------------------------Основной контент-- Первая секция----------- */
 .main-first-section {
   background-color: var(--black-box-color);
 
@@ -162,7 +162,7 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
 }
-/* Заголовок */
+/* ---------------Заголовок------------- */
 .chief-title {
   font-weight: 900;
   font-size: 44px;
@@ -176,7 +176,7 @@ img {
   margin: 0 auto;
   margin-bottom: 30px;
 }
-/* Кнопка под заголовком */
+/* ---------------Кнопка под заголовком-------------- */
 .main-button {
   font-family: Roboto;
   font-weight: 700;
@@ -196,7 +196,7 @@ img {
   padding: 10px 32px;
 }
 
-/* ----------Позиционирование Main -------portfolio----*/
+/* --------------------------Позиционирование Main -------portfolio----*/
 
 .portfolio-main {
   padding-top: 94px;
@@ -244,8 +244,6 @@ img {
   border-bottom-width: 1px;
   border-bottom-style: solid;
 }
-
-/* Позиционирование Футер */
 
 /* Позиционирование главной страницы */
 /* Позиционирование main главной страницы */
@@ -300,16 +298,12 @@ img {
   width: calc(100% / 3 - 30);
   margin-right: 30px;
 }
-/* -------------Секция наша команда --------------*/
+/* ----------------------------------------------------------Секция наша команда --------------*/
 .team-section {
   background-color: var(--button-background);
   padding-bottom: 94px;
 }
-.team {
-  text-align: center;
-  justify-content: center;
-  margin-bottom: 50px;
-}
+
 .team-list {
   display: flex;
   padding-right: auto;
@@ -329,6 +323,8 @@ img {
   line-height: 1.2;
 
   text-align: center;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
 .team-title {
@@ -391,8 +387,6 @@ img {
   color: var(--white-color);
 }
 
-/* Футер основная страница */
-
 /* Main contant */
 .main {
   background-color: var(--white-color);
@@ -409,7 +403,50 @@ img {
   clip: rect(0 0 0 0);
 }
 
-/* -----------Кнопки портфолио------------- */
+/* -------------------------------Секция постоянные клиенты------------------- */
+
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.clients-icon-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clients-icon-item + .clients-icon-item {
+  margin-left: 30px;
+}
+.card-clients-icon {
+  fill: currentColor;
+}
+.card-clients-link {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 4px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #afb1b8;
+
+  color: #afb1b8;
+}
+.card-clients-link:hover,
+.card-clients-link:focus {
+  background-color: var(--white-color);
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+/* ----------------------------Кнопки портфолио------------- */
 
 .button-item {
   font-family: Roboto;
@@ -434,7 +471,7 @@ img {
   color: var(--accent-color);
 }
 
-/* -----------Шрифты основного контента портфолио */
+/* ---------------------------------------Шрифты основного контента портфолио------------------------ */
 .title {
   font-weight: 700;
   font-size: 18px;
@@ -455,7 +492,7 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-/* ----------Вторая часть логотипа футера */
+/* ----------------------------------------Вторая часть логотипа футера------------------------ */
 .footer-logo {
   color: var(--white-color);
   font-family: Raleway;
@@ -474,7 +511,7 @@ img {
   margin-top: 20px;
 }
 
-/* --------------Контактные данные футер*/
+/* -----------------------------Контактные данные футер-------------------------*/
 .footer-contact {
   font-style: normal;
   line-height: 1.7;
@@ -490,9 +527,67 @@ img {
 .adress {
   color: var(--white-color);
 }
+/* -----------------------------footer правая часть---------------------------------- */
+.footer-right {
+}
+.footer-card-title {
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 1.1;
+  font-size: 14px;
+  text-transform: uppercase;
 
-/* -----------Хедер идентичен странице портфолио */
+  color: #ffffff;
+}
+.footer-card-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
 
-/* ---------Основная секция------- */
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.footer-card-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-card-item {
+  width: 44px;
+  height: 44px;
+}
+.footer-card-item + .footer-card-item {
+  margin-left: 10px;
+}
+.footer-card-icon {
+  fill: currentColor;
+}
+.footer-card-link {
+  width: 44px;
+  height: 44px;
+  background-color: #44454e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
 
-/* Секция чем мы занимаемся */
+  color: #ffffff;
+}
+.footer-card-link:hover,
+.footer-card-link:focus {
+  background-color: var(--accent-color);
+}
+
+/* -----------------------------Main-secomd-section--------- */
+.main-card-item {
+  width: 270px;
+  height: 120px;
+
+  background-color: #f5f4fa;
+}
+.main-card-list {
+}
+.main-card-item + .main-card-item {
+  margin-left: 30px;
+}
