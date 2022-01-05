@@ -145,6 +145,8 @@ img {
 .header-contact:focus {
   color: var(--accent-color);
 }
+.header-icon {
+}
 /* ---------------------------------------------------Основной контент-- Первая секция----------- */
 .main-first-section {
   background-color: var(--black-box-color);
@@ -251,6 +253,7 @@ img {
 .main-second-section {
   margin: 0 auto;
   align-items: center;
+  margin-bottom: -94px;
 }
 
 .main-second-list {
@@ -528,7 +531,12 @@ img {
   color: var(--white-color);
 }
 /* -----------------------------footer правая часть---------------------------------- */
+.footer-main-container {
+  display: flex;
+}
 .footer-right {
+  margin-left: 70px;
+  margin-top: 12px;
 }
 .footer-card-title {
   color: #ffffff;
@@ -541,17 +549,17 @@ img {
 }
 .footer-card-title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 14px;
   line-height: 1.2;
 
   text-align: center;
   justify-content: center;
-  margin-bottom: 20px;
 }
 .footer-card-list {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
+  margin-top: 20px;
 }
 .footer-card-item {
   width: 44px;
@@ -580,11 +588,21 @@ img {
 }
 
 /* -----------------------------Main-secomd-section--------- */
+.main-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 25px;
+}
+
 .main-card-item {
   width: 270px;
   height: 120px;
-
+  border-radius: 4px;
   background-color: #f5f4fa;
+
+  margin-bottom: 30px;
 }
 .main-card-list {
 }
