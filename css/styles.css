@@ -98,7 +98,6 @@ img {
   margin-top: 24px;
   margin-bottom: 25px;
   margin-right: 93px;
-  margin-left: 15px;
 }
 .header-list {
   display: flex;
@@ -113,6 +112,7 @@ img {
 .header-contacts {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-left: auto;
 }
 
@@ -145,8 +145,13 @@ img {
 .header-contact:focus {
   color: var(--accent-color);
 }
+/* -----------------------------------hedaer icon---------- */
+
 .header-icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
+
 /* ---------------------------------------------------Основной контент-- Первая секция----------- */
 .main-first-section {
   background-color: var(--black-box-color);
