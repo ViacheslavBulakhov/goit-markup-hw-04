@@ -62,7 +62,6 @@ img {
   border-bottom-width: 1px;
   border-bottom-style: solid;
 
-  width: 1600px;
   height: auto;
 
   display: flex;
@@ -80,6 +79,7 @@ img {
 .nav {
   display: flex;
   align-items: center;
+  margin-right: 305px;
 }
 /* ------------------------Логотип header----------  */
 .logoweb {
@@ -95,12 +95,14 @@ img {
   line-height: 1.2;
 }
 .logo-flex {
-  margin-top: 24px;
-  margin-bottom: 25px;
+  padding-top: 24px;
+  padding-bottom: 25px;
   margin-right: 93px;
+  display: block;
 }
 .header-list {
   display: flex;
+  align-items: center;
 }
 .contact {
   margin-right: 50px;
@@ -108,30 +110,34 @@ img {
 .contact:last-child {
   margin-right: 0;
 }
+.contact-item {
+  margin-right: 30px;
+}
+.contact-item:last-child {
+  margin-right: 0;
+}
 
 .header-contacts {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-left: auto;
 }
 
 .header-contact {
   font-style: normal;
   font-weight: 500;
   line-height: 1.7;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
   color: var(--primary-white-color);
+
+  display: flex;
+  align-items: center;
 }
 .header-item {
   font-style: normal;
   font-weight: 500;
   line-height: 1.14;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
   color: var(--title-text-color);
-  display: inline block;
-
-  margin-right: 50px;
 }
 .header-item:hover,
 .header-item:focus {
@@ -155,12 +161,14 @@ img {
 /* ---------------------------------------------------Основной контент-- Первая секция----------- */
 .main-first-section {
   background-color: var(--black-box-color);
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
 
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 1600px auto;
 
   flex-grow: 1;
   align-items: center;
@@ -213,7 +221,7 @@ img {
 .button-list {
   display: flex;
 
-  margin-bottom: 34px;
+  margin-bottom: 50px;
   justify-content: center;
 }
 .button-item {
@@ -515,15 +523,14 @@ img {
   line-height: 1.2;
 }
 .logo-footer {
+  display: block;
+  margin-bottom: 20px;
 }
 .footer-item {
   margin-bottom: 9px;
 }
 .footer-item:last-child {
   margin-bottom: 0;
-}
-.footer-item:first-child {
-  margin-top: 20px;
 }
 
 /* -----------------------------Контактные данные футер-------------------------*/
@@ -542,36 +549,35 @@ img {
 .adress {
   color: var(--white-color);
 }
+.footer-left {
+  margin-right: 70px;
+}
 /* -----------------------------footer правая часть---------------------------------- */
 .footer-main-container {
   display: flex;
+  align-items: baseline;
 }
 .footer-right {
-  margin-left: 70px;
-  margin-top: 12px;
+  display: block;
+  align-items: baseline;
 }
 .footer-card-title {
   color: #ffffff;
   font-weight: 700;
-  line-height: 1.1;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
   font-size: 14px;
   text-transform: uppercase;
 
   color: #ffffff;
-}
-.footer-card-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.2;
 
-  text-align: center;
-  justify-content: center;
+  margin-bottom: 20px;
 }
+
 .footer-card-list {
   display: flex;
   justify-content: left;
   align-items: center;
-  margin-top: 20px;
 }
 .footer-card-item {
   width: 44px;
