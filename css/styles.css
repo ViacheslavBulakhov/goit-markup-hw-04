@@ -318,6 +318,27 @@ img {
 .main-third-item {
   width: calc(100% / 3 - 30);
   margin-right: 30px;
+
+  position: relative;
+}
+.card-label-text {
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.card-label {
+  position: absolute;
+  bottom: 0px;
+
+  width: 370px;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  text-align: center;
+
+  padding-top: 27px;
 }
 /* ----------------------------------------------------------Секция наша команда --------------*/
 .team-section {
