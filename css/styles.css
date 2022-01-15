@@ -716,8 +716,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-
-  color: #212121;
 }
 .is-hidden {
   opacity: 0;
